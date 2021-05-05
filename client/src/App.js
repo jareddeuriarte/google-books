@@ -1,18 +1,28 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Nav from './components/Nav'
+import Home from './pages/Home'
+import Saved from './pages/Saved'
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Welcome to React</h2>
+    <Router>
+      <div>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/saved" component={Saved} />
+        </Switch>
       </div>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
-    </div>
+    </Router>
   );
 }
 
