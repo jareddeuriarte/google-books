@@ -1,0 +1,7 @@
+.nav{
+    display:flex;
+    align-items: flex-end;
+    background-color: aqua;
+    height:4rem;
+    
+}
