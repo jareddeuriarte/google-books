@@ -9,9 +9,6 @@ export default {
     return axios.get(BASEURL + query.replaceAll(' ', '+')  + APIKEY);
   },
 
- 
-
-
   // Gets all books
   // getBooks: function() {
   //   return axios.get("/api/books");
@@ -24,9 +21,10 @@ export default {
   // deleteBook: function(id) {
   //   return axios.delete("/api/books/" + id);
   // },
-  
+
   // Saves a book to the database
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
+    console.log(bookData)
   }
 };
