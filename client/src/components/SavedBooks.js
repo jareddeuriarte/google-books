@@ -4,7 +4,7 @@ import '../styles/searchResults.css'
 
 
 
-function SavedBooks({ title, authors, description, link, imageLink, handleDeleteBook }) {
+function SavedBooks({ title, authors, description, link, image, handleDeleteBook }) {
 
 
 
@@ -15,7 +15,7 @@ function SavedBooks({ title, authors, description, link, imageLink, handleDelete
             <div className="resultsContainer">
 
                 <div className='imgAndBtn'>
-                    <img src={imageLink} alt={title} />
+                    <img src={image} alt={title} />
                 </div>
 
                 <div className='details'>
