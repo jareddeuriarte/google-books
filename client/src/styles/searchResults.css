@@ -1,0 +1,23 @@
+.flexContainer{
+    display:flex;
+    justify-content: center;
+}
+.resultsContainer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 70%;
+}
+
+
+
+.imgAndBtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+
+}

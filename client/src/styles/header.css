@@ -1,0 +1,15 @@
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+}
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1, h4 {
+    margin: auto;
+}

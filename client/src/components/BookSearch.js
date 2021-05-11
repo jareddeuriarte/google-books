@@ -1,13 +1,12 @@
 import React from 'react';
-// import Home from '../pages/Home'
+import '../styles/bookSearch.css'
 
 function BookSearch(props) {
 console.log(props);
         return (
-            <div>
+            <div className='flexContainer'>
                 <form>
                     <div className="form-group">
-                        <label htmlFor="search">Search Google Books:</label>
                         <input
                             onChange={props.handleInputChange}
                             value={props.search}

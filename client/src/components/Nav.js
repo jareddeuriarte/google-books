@@ -4,7 +4,7 @@ import '../styles/nav.css'
 function Nav() {
     return (
         <nav className='nav' >
-            <a href="/">Google Books</a>
+            <a className='books' href="/">Google Books</a>
 
             <a href="/">Search</a>
 
