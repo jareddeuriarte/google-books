@@ -4,7 +4,7 @@ import '../styles/searchResults.css'
 
 
 
-function SearchResults({ title, authors, description, link, imageLink, handleSaveBook }) {
+function SavedBooks({ title, authors, description, link, imageLink, handleDeleteBook }) {
 
 
 
@@ -16,7 +16,6 @@ function SearchResults({ title, authors, description, link, imageLink, handleSav
 
                 <div className='imgAndBtn'>
                     <img src={imageLink} alt={title} />
-                    <button onClick={handleSaveBook}>Save book to library. </button>
                 </div>
 
                 <div className='details'>
@@ -24,6 +23,7 @@ function SearchResults({ title, authors, description, link, imageLink, handleSav
                     <h5>By: {authors}</h5>
                     <p>{description}</p>
                     <a href={link} target="_blank" rel="noopener noreferrer" >View Book</a>
+                    <button onClick={handleDeleteBook}>Delete</button>
                 </div>
 
             </div>
@@ -35,4 +35,4 @@ function SearchResults({ title, authors, description, link, imageLink, handleSav
 
 }
 
-export default SearchResults;
+export default SavedBooks;

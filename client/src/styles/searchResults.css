@@ -2,6 +2,7 @@
     display:flex;
     justify-content: center;
 }
+
 .resultsContainer{
     display:flex;
     flex-direction: row;

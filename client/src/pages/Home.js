@@ -16,10 +16,10 @@ function Home() {
             .then(res => {
                 console.log("API results", res.data.items)
                 //updating books state 
-                if ( res.data.items.length > 0 ){ 
+                if (res.data.items.length > 0) {
                     setBooks(res.data.items);
                 }
-                
+
             })
             .catch(err => console.log(err));
     };
@@ -42,9 +42,21 @@ function Home() {
 
     const handleSaveBook = book => {
         console.log("Save book number;", book)
+        const bookData = {
+            title: book.volumeInfo.title,
+            authors: book.volumeInfo.authors,
+            description: book.volumeInfo.description,
+            image: book.volumeInfo.imageLinks.smallThumbnail,
+            link: book.volumeInfo.infoLink,
+            bookId: book.id
+        }
 
-        API.saveBook(book);
-    
+        API.saveBook(bookData).then(res => {
+            console.log("API savebook", res)
+
+        })
+            .catch(err => console.log(err));
+
 
     };
 
