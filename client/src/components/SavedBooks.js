@@ -6,9 +6,6 @@ import '../styles/searchResults.css'
 
 function SavedBooks({ title, authors, description, link, image, handleDeleteBook }) {
 
-
-
-
     return (
 
         <div className='flexContainer'>
@@ -16,6 +13,8 @@ function SavedBooks({ title, authors, description, link, image, handleDeleteBook
 
                 <div className='imgAndBtn'>
                     <img src={image} alt={title} />
+                    <button onClick={handleDeleteBook}>Delete</button>
+
                 </div>
 
                 <div className='details'>
@@ -23,7 +22,6 @@ function SavedBooks({ title, authors, description, link, image, handleDeleteBook
                     <h5>By: {authors}</h5>
                     <p>{description}</p>
                     <a href={link} target="_blank" rel="noopener noreferrer" >View Book</a>
-                    <button onClick={handleDeleteBook}>Delete</button>
                 </div>
 
             </div>

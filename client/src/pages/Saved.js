@@ -9,23 +9,11 @@ function Saved() {
 
     const [books, setBooks] = useState([])
 
-
-    // const savedBooks = () => {
-    //     console.log("HELLO ")
-    //     API.getSavedBooks()
-    //         .then(res => {
-    //             console.log("API getSavedBooks", res)
-    //             return res;
-
-    //         })
-    //         .catch(err => console.log(err));
-    // };
-
     const handleDeleteBook = (id) => {
         API.deleteBook(id)
-            .then(res => {
-                console.log('Book Deleted!' + id)
-            })
+        
+        .then(res => loadBooks())
+
             .catch(err => console.log(err));
     };
 
@@ -41,34 +29,6 @@ function Saved() {
             )
             .catch(err => console.log(err));
     };
-
-
-
-
-    // useEffect(() => {
-    //     if (!books) {
-    //       return;
-    //     }
-
-    // API.getSavedBooks()
-    // .then(res => {
-    //     console.log("API getSavedBooks", res)
-    //   setBooks(res);
-
-    // })
-    // .catch(err => console.log(err));
-
-
-    //     const value = savedBooks(); 
-    //     console.log("books", value)
-    //     if ( value !== undefined){
-    //         setBooks(value);
-    //     }
-
-    //   }, [books]);
-
-
-
 
     return (
         <div>
@@ -90,7 +50,7 @@ function Saved() {
                     }
                 </>
             ) : (
-                <h3>No results found !!! </h3>)
+                <h3>No results at this time. </h3>)
             }
 
 

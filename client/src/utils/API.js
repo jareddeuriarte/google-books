@@ -4,6 +4,7 @@ const BASEURL = 'https://www.googleapis.com/books/v1/volumes?q='
 const APIKEY = '&key=AIzaSyAd_7Ux1Xig4BjN-8yTmTuZwgIiQKv96jQ'
 
 export default {
+  //Searches Google Books
   search: function (query) {
     console.log("URL: ", BASEURL + query.replaceAll(' ', '+') + APIKEY); 
     return axios.get(BASEURL + query.replaceAll(' ', '+')  + APIKEY);
@@ -13,10 +14,7 @@ export default {
   getSavedBooks: function() {
     return axios.get("/api/books");
   },
-  // Gets the book with the given id
-  // getBook: function(id) {
-  //   return axios.get("/api/books/" + id);
-  // },
+
   // Deletes the book with the given id
   deleteBook: function(id) {
     return axios.delete("/api/books/" + id);

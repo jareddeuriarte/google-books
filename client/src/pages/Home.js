@@ -86,7 +86,7 @@ function Home() {
                     }
                 </>
             ) : (
-                <h3>No results found !!! </h3>)
+                <h3>No results at this time.</h3>)
             }
 
 
