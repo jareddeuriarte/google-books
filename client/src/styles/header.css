@@ -1,15 +1,15 @@
-.flexContainer{
+.hero{
     display: flex;
     justify-content: center;
     padding: 2rem;
-
+    background-image: url("/images/bookshelf.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 275px;
+    align-items: center;
+    z-index: 0;
 }
+
 .headerContainer{
-    display: flex;
-    flex-direction: column;
     text-align: center;
-}
-
-h1, h4 {
-    margin: auto;
 }

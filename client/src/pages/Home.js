@@ -27,7 +27,8 @@ function Home() {
     const handleInputChange = event => {
         const name = event.target.name;
         const value = event.target.value;
-        // console.log(name, value);
+        
+        console.log(name, value);
 
         setSearch(event.target.value);
     };
@@ -62,12 +63,11 @@ function Home() {
 
     return (
         <div>
-            <Header />
+            <Header/>
             <BookSearch
                 handleInputChange={handleInputChange}
                 handleFormSubmit={handleFormSubmit}
                 search={search}
-
             />
             {books.length ? (
                 <>
