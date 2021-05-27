@@ -4,7 +4,7 @@ import '../styles/bookSearch.css'
 function BookSearch(props) {
 console.log(props);
         return (
-            <div className='flexContainer'>
+            <div className='search-container'>
                 <form>
                     <div className="form-group">
                         <input
@@ -24,6 +24,5 @@ console.log(props);
             </div>
         )
 }
-
 
 export default BookSearch;

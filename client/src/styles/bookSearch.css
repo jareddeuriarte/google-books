@@ -1,5 +1,16 @@
-/* .flexContainer{
+.search-container{
     display: flex;
     justify-content: center;
+    padding:10px;
+
 }
- */
+
+input{
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-right: 2px;
+
+
+}
+
