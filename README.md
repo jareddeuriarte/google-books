@@ -1,15 +1,16 @@
-# Google Books Library
+# My Google Books
 ## Description
-Basic library application enabled by Google Books API, Reactm and MongoDB. User can search Google Books, save books to their personal library, and view the collection of saved books in their library.
-
+Basic library application for searching and saving volumes to a personalized library. Powered by React, MongoDB, and Google Books API, this application demonstrates POST, READ, and DELETE database operations. 
 
 ## Table of Contents
 - [Description](#Description)
 - [Deployment](#Deployment)
-- [Features](#Features)
+- [Technologies](#Technologies)
+- [Future Dev](#FutureDev)
 - [Credits](#Credits)
 - [Contributing](#Contributing)
 - [License](#License)
+- [Questions/Contact](#Questions)
   
 
 ## Deployment
@@ -17,23 +18,23 @@ Basic library application enabled by Google Books API, Reactm and MongoDB. User 
 - [GitHub Repo](https://github.com/jareddeuriarte/google-books)
   
 
-![home page](images/google-books.png)
+![demo](client/public/images/demo.gif)
   
 
 ### Technologies
 - React
-- Node.js technology
+- Node.js
 - Express
-- MongoDB & Mongoose framework
+- MongoDB & Mongoose
 - Google Books API
 
 ## Future Dev
-if the description goes on for more than 4-5 lines, generate a '...Read More' link to the same href as 'View Book' link. 
+- User authentication
+- If a volume description exceeds 4-5 lines, generate a '...Read More' link taking the user to the same url as 'View Book' link.
 
 ### Credits  
-My tutor Namita.
-
-https://unsplash.com/photos/fulXJYIvRi8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+[Namita Shenai](https://github.com/NVK2016)
+[Hero image by Caleb Woods](https://unsplash.com/photos/fulXJYIvRi8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 ### Contributing
 Forks are welcome!
