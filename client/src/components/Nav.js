@@ -4,11 +4,11 @@ import '../styles/nav.css'
 function Nav() {
     return (
         <nav className='nav'>
-            <a className='books' href="/">Google Books</a>
+            <a id='title' href="/">Google Books</a>
 
             <a className='nav-tabs' href="/">Search</a>
 
-            <a href="/saved">My Library</a>
+            <a id='my-library'href="/saved">My Library</a>
         </nav>
 
     )

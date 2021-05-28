@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import BookSearch from '../components/BookSearch';
 import API from '../utils/API'
 import SearchResults from '../components/SearchResults';
+import '../styles/home.css'
 
 function Home() {
 
@@ -43,6 +44,7 @@ function Home() {
 
     const handleSaveBook = book => {
         console.log("Save book number;", book)
+
         const bookData = {
             title: book.volumeInfo.title,
             authors: book.volumeInfo.authors,
@@ -61,6 +63,7 @@ function Home() {
 
     };
 
+
     return (
         <div>
             <Header/>
@@ -78,7 +81,7 @@ function Home() {
                                 title={book.volumeInfo.title}
                                 authors={book.volumeInfo.authors}
                                 description={book.volumeInfo.description}
-                                imageLink={book.volumeInfo.imageLinks.smallThumbnail}
+                                imageLink={book.volumeInfo.imageLinks == null ? 'https://via.placeholder.com/150' : book.volumeInfo.imageLinks.smallThumbnail }
                                 link={book.volumeInfo.infoLink}
                                 handleSaveBook={() => handleSaveBook(book)}
                             />
@@ -86,7 +89,7 @@ function Home() {
                     }
                 </>
             ) : (
-                <h3>Search to browse volumes.</h3>)
+                <h3 id='no-results-message'>Search by key terms to browse volumes.</h3>)
             }
 
 

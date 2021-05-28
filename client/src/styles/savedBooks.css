@@ -1,4 +1,4 @@
-.results-wrapper{
+.saved-wrapper{
     margin: auto;
     max-width: 70%;
     display: flex;
@@ -27,7 +27,7 @@ hr{
 
 
 
-.img-wrapper{
+.saved-img-wrapper{
     padding: 27px;
 }
 
@@ -37,14 +37,13 @@ padding: 7px 9px;
  
 }
 
-.button-wrapper{
+.saved-button-wrapper{
     display: flex;
     justify-content: flex-end;    
     align-items: flex-end;
 }
 
-#view-book-button{
+#saved-view-book-button{
     padding:0px 8px;
 
 }
-

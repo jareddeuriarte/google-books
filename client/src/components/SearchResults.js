@@ -10,7 +10,8 @@ function SearchResults({ title, authors, description, link, imageLink, handleSav
 
 
     return (
-
+        
+        <div>
         <div className='results-wrapper'>
 
 
@@ -29,11 +30,14 @@ function SearchResults({ title, authors, description, link, imageLink, handleSav
                 </div>
             </div>
 
-            <br></br>
-
+        
 
 
         </div>
+
+
+            <hr></hr>
+            </div>
     );
 
 
