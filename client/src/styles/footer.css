@@ -1,0 +1,26 @@
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer-hr{
+    align-self: flex-end;
+    height:1px;
+    width: 55%;
+    border-width:0;
+    color: RGBA(244,134,75, 1);
+    background-color: RGBA(244,134,75, 1);
+
+}
+
+#footer-details{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+p{
+    border-right:RGBA(244,134,75, 1) solid
+}

@@ -3,7 +3,7 @@ import "./App.css";
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Saved from './pages/Saved'
-// import BookSearch from './components/BookSearch'
+import Footer from './components/Footer';
 
 import {
   BrowserRouter as Router,
@@ -23,6 +23,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/saved" component={Saved} />
         </Switch>
+        <Footer />
+
       </div>
     </Router>
   );
