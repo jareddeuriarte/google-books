@@ -7,7 +7,7 @@
 #footer-hr{
     align-self: flex-end;
     height:1px;
-    width: 55%;
+    width: 25%;
     border-width:0;
     color: RGBA(244,134,75, 1);
     background-color: RGBA(244,134,75, 1);
@@ -21,6 +21,3 @@
 
 }
 
-p{
-    border-right:RGBA(244,134,75, 1) solid
-}

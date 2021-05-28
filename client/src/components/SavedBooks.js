@@ -8,6 +8,7 @@ function SavedBooks({ title, authors, description, link, image, handleDeleteBook
 
     return (
 <div>
+
         <div className='saved-wrapper'>
 
                 <div className='saved-img-wrapper'>

@@ -4,16 +4,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* display:flex; */
-    /* justify-content: center; */
     padding-bottom: 45px;
     padding-top: 45px;
-
-    /* border-bottom: rgba(0, 0, 0, .2) solid 1px; */
-
-    /* border-bottom: #F4864B solid 1px; */
-    /* border-bottom: #A1CBE1 solid 1px; */
-
 }
 
 hr{

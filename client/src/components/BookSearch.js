@@ -13,7 +13,6 @@ console.log(props);
                             name="search"
                             type="text"
                             className="form-control"
-                            placeholder="Search by key term"
                             id="search"
                         />
                         <button onClick={props.handleFormSubmit}>

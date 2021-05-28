@@ -6,10 +6,31 @@ function Footer() {
 
     return (
         <div className='footer-wrapper'>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            
             <hr id='footer-hr'></hr>
             <div id='footer-details'>
-                <p>Photo by<a href='https://unsplash.com/photos/fulXJYIvRi8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink'>Caleb Woods</a></p>
-                <p>Made with 🥰 by Jared de Uriarte</p>
+                <p>Made with <span role='img' aria-lable='fire emoji'>🔥</span> by Jared de Uriarte</p>
+
             </div>
         </div>
 
