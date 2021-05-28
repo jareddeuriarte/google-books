@@ -11,22 +11,28 @@ function SearchResults({ title, authors, description, link, imageLink, handleSav
 
     return (
 
-        <div className='flexContainer'>
-            <div className="resultsContainer">
+        <div className='results-wrapper'>
 
-                <div className='imgAndBtn'>
-                    <img src={imageLink} alt={title} />
-                    <button onClick={handleSaveBook}>Save book to library. </button>
-                </div>
 
-                <div className='details'>
-                    <h3>{title}</h3>
-                    <h5>By: {authors}</h5>
-                    <p>{description}</p>
-                    <a href={link} target="_blank" rel="noopener noreferrer" >View Book</a>
-                </div>
-
+            <div className='img-wrapper'>
+                <img src={imageLink} alt={title} />
             </div>
+
+            <div className='details-wrapper'>
+                <h2>{title}</h2>
+                <h5>By: {authors}</h5>
+                <p>{description}</p>
+
+                <div className='button-wrapper'>
+                    <a id='view-book-button'href={link} target="_blank" rel="noopener noreferrer" >View Book</a>
+                    <button id='save-button' onClick={handleSaveBook}>Save to library. </button>
+                </div>
+            </div>
+
+            <br></br>
+
+
+
         </div>
     );
 

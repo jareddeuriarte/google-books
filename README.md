@@ -27,6 +27,8 @@ Basic library application enabled by Google Books API, Reactm and MongoDB. User 
 - MongoDB & Mongoose framework
 - Google Books API
 
+## Future Dev
+if the description goes on for more than 4-5 lines, generate a '...Read More' link to the same href as 'View Book' link. 
 
 ### Credits  
 My tutor Namita.

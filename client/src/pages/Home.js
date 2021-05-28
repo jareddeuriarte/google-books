@@ -86,7 +86,7 @@ function Home() {
                     }
                 </>
             ) : (
-                <h3>No results at this time.</h3>)
+                <h3>Search to browse volumes.</h3>)
             }
 
 
