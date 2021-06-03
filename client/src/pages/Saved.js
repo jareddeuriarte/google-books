@@ -44,7 +44,7 @@ function Saved() {
                                 description={book.description}
                                 image={book.image}
                                 link={book.link}
-                                handleDeleteBook={() => handleDeleteBook(book.id)}
+                                handleDeleteBook={() => handleDeleteBook(book._id)}
                             />
                         ))
                     }
