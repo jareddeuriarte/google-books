@@ -14,7 +14,7 @@ Basic library application for searching and saving volumes to a personalized lib
   
 
 ## Deployment
-- [Heroku Deployment](https://morning-harbor-85685.herokuapp.com/)
+- [Heroku Deployment](https://my-google-books-app.herokuapp.com/)
 - [GitHub Repo](https://github.com/jareddeuriarte/google-books)
   
 
